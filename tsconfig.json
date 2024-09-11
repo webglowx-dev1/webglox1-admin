@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "incremental": true,
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "@/*": ["./src/*"],
+            "@reducers/*": ["./src/app/components/reducers/*"],
+            "@assets/*": ["./src/app/components/assets/*"],
+            "@common/*": ["./src/app/components/common/*"],
+            "@store": ["./src/app/components/store"],
+            "@firebase": ["./src/app/components/firebase"],
+            "@components/*": ["./src/app/components/*"],
+            "@security/*": ["./src/app/components/security/*"],
+            "@helpers/*": ["./src/app/components/helpers/*"],
+            "@JKMasterLayout": ["./src/app/layouts/layout"],
+            "@app/*": ["./src/app/*"]
+        }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+    "exclude": ["node_modules"]
+}
